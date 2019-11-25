@@ -85,7 +85,7 @@ def generate():
             #sleep(cfg.settings['interval'])
             s.close()
         
-        if args.protocol == 'http':
+        elif args.protocol == 'http':
             write_api.write(bucket=bucket, org=org, record=points)
 
     if args.format == 'prometheus':
